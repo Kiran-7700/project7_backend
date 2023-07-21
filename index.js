@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors({
     origin:"*" 
 }))
-app.use("/api",categoryRouter)
+app.use("/api/categories",categoryRouter)
 app.use("/students",userRoute)
 
 app.listen(4000,()=>{

@@ -49,8 +49,11 @@ function signUp(req, res) {
 
   console.log(userData);
   console.log("user register successfully");
-
-  res.status(201).send("register successfully");
+  res.status(201).json({
+    message:"user register successfully",
+    userData
+  })
+  
 }
 
 function login(req, res) {
